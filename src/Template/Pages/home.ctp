@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <!-- hero area end -->
+    <!-- hero area edddnd -->
 
     <script type="text/javascript">
         function bajocv(){
