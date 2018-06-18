@@ -18,7 +18,7 @@
                             </li>
                         </ul>
                         <div class="download-cv">
-                            <a id="descargacv" href="<?= $this->Url->build('/files/curriculum_2018.doc', true) ?>" target="_blank">Descargar CV</a>
+                            <a onclick="ga('send', 'event', 'Descargas', CV', 'DOC');" href="<?= $this->Url->build('/files/curriculum_2018.doc', true) ?>">Descargar CV</a>
                         </div>
                     </div>
                 </div>
