@@ -18,7 +18,7 @@
                             </li>
                         </ul>
                         <div class="download-cv">
-                            <a href="<?= $this->Url->build('/files/curriculum_2018.doc', true) ?>">Descargar CV</a>
+                            <a href="<?= $this->Url->build('/files/curriculum_2018.doc#cv', true) ?>">Descargar CV</a>
                         </div>
                     </div>
                 </div>
