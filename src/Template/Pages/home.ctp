@@ -18,7 +18,7 @@
                             </li>
                         </ul>
                         <div class="download-cv">
-                            <a onclick="ga('send', 'event', 'Descargas', 'CV', 'DOC');" href="<?= $this->Url->build('/files/curriculum_2018.doc', true) ?>">Descargar CV</a>
+                            <a onclick="bajocv();" href="<?= $this->Url->build('/files/curriculum_2018.doc', true) ?>" target="_blank">Descargar CV</a>
                         </div>
                     </div>
                 </div>
@@ -26,3 +26,15 @@
         </div>
     </div>
     <!-- hero area end -->
+
+    <script type="text/javascript">
+        function bajocv(){
+
+            gtag('event', 'CV', {
+              'event_category' : 'Descargas',
+              'event_label' : 'DOC',
+              'value': 1
+            });
+        }
+
+    </script>
