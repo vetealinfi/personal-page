@@ -42,10 +42,10 @@
         if(isset($meta_img)){
             echo '<meta property="og:image" content="'.$this->Url->build('/template_front/'.$meta_img, true).'" />';
         }else{
-            echo '<meta property="og:image" content="'.$this->Url->build('/template_front/png/onlyphotoc.png', true).'" />';
+            echo '<meta property="og:image" content="'.$this->Url->build('/template_front/jpg/img-face2.jpg', true).'" />';
         }
     ?>
-    
+
     <?php
         echo '<meta property="og:url" content="'.$this->Url->build(null, true).'" />';
     ?>
