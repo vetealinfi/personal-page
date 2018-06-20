@@ -137,48 +137,6 @@
         event.preventDefault();
     });
 
-    /*================================
-    Ajax Contact Form
-    ==================================*/
-    $('.screen-reader-response').hide();
-    $('form#cf #submit').on('click', function() {
-        var fname = $('#fname').val();
-        var lname = $('#lname').val();
-        var email = $('#email').val();
-        var msg = $('#msg').val();
-        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-        if (!regex.test(email)) {
-            alert('Please enter valid email');
-            return false;
-        }
-
-        fname = $.trim(fname);
-        lname = $.trim(lname);
-        email = $.trim(email);
-        msg = $.trim(msg);
-
-        if (fname != '' && email != '' && msg != '') {
-            var values = "fname=" + fname + "&lname=" + lname + " &email=" + email + " &msg=" + msg;
-            $.ajax({
-                type: "POST",
-                url: "mail.php",
-                data: values,
-                success: function() {
-                    $('#fname').val('');
-                    $('#lname').val('');
-                    $('#msg').val('');
-
-                    $('.screen-reader-response').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
-                    setTimeout(function() {
-                        $('.screen-reader-response').fadeOut('slow');
-                    }, 4000);
-                }
-            });
-        } else {
-            $('.screen-reader-response').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please fillup the informations correctly.</div>')
-        }
-        return false;
-    });
 
 })(jQuery);
