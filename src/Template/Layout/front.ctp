@@ -63,7 +63,7 @@
     <link rel="shortcut icon" type="image/png" href="<?= $this->Url->build('/template_front/', true) ?>ico/favicon.ico">
 
     <?= $this->element('front_css') ?>
-    <?= $this->fetch('css') ?>
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69284021-1"></script>
@@ -77,7 +77,7 @@
 
 
     
-    <?= $this->fetch('script') ?>
+    
  
 </head>
 
