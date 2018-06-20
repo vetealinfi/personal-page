@@ -18,7 +18,7 @@
                             </li>
                         </ul>
                         <div class="download-cv">
-                            <a onclick="bajocv();" href="<?= $this->Url->build('/files/curriculum_2018.doc', true) ?>" target="_blank">Descargar CV</a>
+                            <a onclick="bajocv();" href="<?= $this->Url->build('/files/curriculum_2018.doc', true) ?>" target="_blank" aria-haspopup="true" role="button">Descargar CV</a>
                         </div>
                     </div>
                 </div>

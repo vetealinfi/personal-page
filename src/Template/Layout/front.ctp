@@ -13,7 +13,10 @@
         ?>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="theme-color" content="#000000"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <?php
         if(isset($description)){
             echo $this->Html->meta('description',$description);
@@ -21,7 +24,9 @@
             echo $this->Html->meta('description','Soy un Web Developer, entusiasta por las tecnologias web y amante de CakePhp. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
         }
     ?>
+    <meta content="jorgepartal" name="author" />
 
+    <meta property="og:type" content="website"/>
     <?php
         if(isset($title)){
             echo '<meta property="og:title" content="'.$title.'" />';
