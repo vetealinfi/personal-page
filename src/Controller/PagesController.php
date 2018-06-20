@@ -29,43 +29,7 @@ use Cake\View\Exception\MissingTemplateException;
 class PagesController extends AppController
 {
 
-    /**
-     * Displays a view
-     *
-     * @param array ...$path Path segments.
-     * @return \Cake\Http\Response|null
-     * @throws \Cake\Http\Exception\ForbiddenException When a directory traversal attempt.
-     * @throws \Cake\Http\Exception\NotFoundException When the view file could not
-     *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
-     */
-    public function display(...$path)
-    {
-        $count = count($path);
-        if (!$count) {
-            return $this->redirect('/');
-        }
-        if (in_array('..', $path, true) || in_array('.', $path, true)) {
-            throw new ForbiddenException();
-        }
-        $page = $subpage = null;
 
-        if (!empty($path[0])) {
-            $page = $path[0];
-        }
-        if (!empty($path[1])) {
-            $subpage = $path[1];
-        }
-        $this->set(compact('page', 'subpage'));
-
-        try {
-            $this->render(implode('/', $path));
-        } catch (MissingTemplateException $exception) {
-            if (Configure::read('debug')) {
-                throw $exception;
-            }
-            throw new NotFoundException();
-        }
-    }
 
 
     /**
@@ -80,6 +44,7 @@ class PagesController extends AppController
 
      */
     public function home(){
+        $this->set('title', 'Jorge Partal || Cakephp Web Developer');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 1;
         $this->set(compact('menu_active'));
@@ -97,6 +62,9 @@ class PagesController extends AppController
 
      */
     public function skills(){
+        $this->set('title', 'Skills Web || Cakephp Web Developer');
+        $this->set('description', 'Aquí te presento algunas de mis habilidades, siempre estoy actualizandome. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
+
         $this->viewBuilder()->setLayout('front');
         $menu_active = 2;
         $this->set(compact('menu_active'));
@@ -114,6 +82,8 @@ class PagesController extends AppController
 
      */
     public function education(){
+        $this->set('title', 'Education || Cakephp Web Developer');
+        $this->set('description', 'Aquí te presento mi historial en educacion, siempre estoy aprendiendo y tomando cursos. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 3;
         $this->set(compact('menu_active'));
@@ -131,6 +101,8 @@ class PagesController extends AppController
 
      */
     public function experience(){
+        $this->set('title', 'Experience || Cakephp Web Developer');
+        $this->set('description', 'Aquí te muestro mi experiencia laboral, revisa tambien mis proyectos freelance. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 4;
         $this->set(compact('menu_active'));
@@ -148,6 +120,9 @@ class PagesController extends AppController
 
      */
     public function projects(){
+
+        $this->set('title', 'Portfolio || Cakephp Web Developer');
+        $this->set('description', 'Aquí te muestro mi protfolio de proyectos, revisa los mas actuales y dime si te interesa algo similar. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 5;
         $this->set(compact('menu_active'));
@@ -165,6 +140,8 @@ class PagesController extends AppController
 
      */
     public function blog(){
+        $this->set('title', 'Blog || Cakephp Web Developer');
+        $this->set('description', 'Te contare un poco acerca de lo que hago y lo que he aprendido, ojalá te sirva de ayuda. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 6;
         $this->set(compact('menu_active'));
@@ -182,6 +159,8 @@ class PagesController extends AppController
 
      */
     public function contact(){
+        $this->set('title', 'Contact || Cakephp Web Developer');
+        $this->set('description', ' Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce. Te devolveré el llamado apenas pueda o si quieres nos tomamos un café');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 7;
         $this->set(compact('menu_active'));
