@@ -8,7 +8,7 @@
     <script src="<?= $this->Url->build('/template_front/', true) ?>js/jquery.slicknav.min.js"></script>
     <script src="<?= $this->Url->build('/template_front/', true) ?>js/imagesloaded.pkgd.min.js"></script>
     <script src="<?= $this->Url->build('/template_front/', true) ?>js/isotope.pkgd.min.js"></script>
-    <!-- <script src="<?= $this->Url->build('/template_front/', true) ?>js/jquery.magnific-popup.min.js"></script> -->
+    <script src="<?= $this->Url->build('/template_front/', true) ?>js/jquery.magnific-popup.min.js"></script>
     <script src="<?= $this->Url->build('/template_front/', true) ?>js/jquery-aspieprogress.min.js"></script>
     <script src="<?= $this->Url->build('/template_front/', true) ?>js/plugins.js"></script>
     <script src="<?= $this->Url->build('/template_front/', true) ?>js/scripts.js"></script>
