@@ -24,6 +24,12 @@
                                     <p>+56 9 66868200</p>
                                 </div>
                             </div>
+                            <div class="s-contact-info">
+                                <div class="icon"><i class="fa fa-comments"></i></div>
+                                <div class="sc-text">
+                                    <p><a href="https://tawk.to/chat/589d3050a8edb309fa9aadf3/default/?$_tawk_popout=true" style="color:white;" target="_blank">CHAT</a></p>
+                                </div>
+                            </div>
                         </div>
                         <!-- <div class="leave-message">
                             <h2 class="skill-title">Massage Me</h2>

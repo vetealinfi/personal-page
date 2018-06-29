@@ -114,12 +114,23 @@
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <div class="offset-s-info">
+                            <i class="fa fa-comments"></i>
+                            <div class="c_info">
+                                <p><a href="https://tawk.to/chat/589d3050a8edb309fa9aadf3/default/?$_tawk_popout=true" style="color:white;" target="_blank">CHAT</a></p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="offset-social fadein deley-3">
                 <ul class="hr-social">
                     <li>
                         <a href="https://www.linkedin.com/in/jorgepartal">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Desarrollador-Web-239188126233108/">Facebook</a>
                     </li>
                     <li>
                         <a href="mailto:jorgepartal@gmail.com">jorgepartal@gmail.com</a>
