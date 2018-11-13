@@ -68,7 +68,7 @@
     <?= $this->AssetCompress->css('allcss2.css'); ?>
     
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics ss-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69284021-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
