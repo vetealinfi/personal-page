@@ -62,7 +62,10 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/png" href="<?= $this->Url->build('/template_front/', true) ?>ico/favicon.ico">
 
+
+    <?= $this->AssetCompress->css('allcss.css'); ?>
     <?= $this->element('front_css') ?>
+    <?= $this->AssetCompress->css('allcss2.css'); ?>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -76,7 +79,7 @@
     </script>
 
 
-    
+    <?= $this->fetch('script') ?>
     
  
 </head>
@@ -89,6 +92,10 @@
     <?= $this->fetch('content') ?>
 
     <?= $this->element('front_footer') ?>
+
+
+
+    <?= $this->AssetCompress->script('base'); ?>
     <?= $this->element('front_js') ?>
 
 </body>
