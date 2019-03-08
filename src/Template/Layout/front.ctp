@@ -93,9 +93,6 @@
 
     <?= $this->element('front_footer') ?>
 
-
-
-    <?= $this->AssetCompress->script('base'); ?>
     <?= $this->element('front_js') ?>
 
 </body>
