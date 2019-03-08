@@ -14,7 +14,7 @@
                     <div class="col-lg-2">
                         <div class="logo">
                             <a href="<?= $this->Url->build('/', true) ?>">
-                                <img src="<?= $this->Url->build('/template_front/', true) ?>png/logo2.png" alt="image">
+                                <img src="<?= $this->Url->build('/template_front/', true) ?>png/logo2.png" alt="jorge partal">
                             </a>
                         </div>
                     </div>
