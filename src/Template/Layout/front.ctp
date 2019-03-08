@@ -63,9 +63,9 @@
     <link rel="shortcut icon" type="image/png" href="<?= $this->Url->build('/template_front/', true) ?>ico/favicon.ico">
 
 
-    <?= //$this->AssetCompress->css('allcss.css'); ?>
+    <?php  //echo $this->AssetCompress->css('allcss.css'); ?>
     <?= $this->element('front_css') ?>
-    <?= //$this->AssetCompress->css('allcss2.css'); ?>
+    <?php  //echo $this->AssetCompress->css('allcss2.css'); ?>
     
 
     <!-- Global site tag (gtag.js) - Google Analytics ss-->
