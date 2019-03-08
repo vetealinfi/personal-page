@@ -1,4 +1,4 @@
-    <script src="<?= $this->Url->build('/template_front/', true) ?>js/modernizr-2.8.3.min.js"></script>
+    
 
     <!-- jquery latest version -->
     <script src="<?= $this->Url->build('/template_front/', true) ?>js/jquery-2.2.4.min.js"></script> 

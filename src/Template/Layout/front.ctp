@@ -77,7 +77,7 @@
 
       gtag('config', 'UA-69284021-1');
     </script>
-
+    <script src="<?= $this->Url->build('/template_front/', true) ?>js/modernizr-2.8.3.min.js"></script>
 
     <?= $this->fetch('script') ?>
     
