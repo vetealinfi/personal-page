@@ -37,9 +37,10 @@
                                     <!-- <li class="<?php if(isset($menu_active) && $menu_active == 5){echo 'active';} ?>">
                                         <a href="<?= $this->Url->build('/proyectos', true) ?>">Proyectos</a>
                                     </li>
+                                    -->
                                     <li class="<?php if(isset($menu_active) && $menu_active == 6){echo 'active';} ?>">
                                         <a href="<?= $this->Url->build('/blog', true) ?>">Blog</a>
-                                    </li> -->
+                                    </li>
                                     <li class="<?php if(isset($menu_active) && $menu_active == 7){echo 'active';} ?>">
                                         <a href="<?= $this->Url->build('/contacto', true) ?>">Contacto</a>
                                     </li>
@@ -88,9 +89,9 @@
                     <!-- <li class="<?php if(isset($menu_active) && $menu_active == 5){echo 'active';} ?>">
                         <a href="<?= $this->Url->build('/proyectos', true) ?>">Proyectos</a>
                     </li> -->
-                    <!-- <li class="<?php if(isset($menu_active) && $menu_active == 6){echo 'active';} ?>">
+                    <li class="<?php if(isset($menu_active) && $menu_active == 6){echo 'active';} ?>">
                         <a href="<?= $this->Url->build('/blog', true) ?>">Blog</a>
-                    </li> -->
+                    </li>
                     <li class="<?php if(isset($menu_active) && $menu_active == 7){echo 'active';} ?>">
                         <a href="<?= $this->Url->build('/contacto', true) ?>">Contacto</a>
                     </li>

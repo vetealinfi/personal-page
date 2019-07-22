@@ -6,6 +6,15 @@
     <script src="<?= $this->Url->build('/template_front/') ?>js/bootstrap.min.js"></script> 
 
     <!-- others plugins -->
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shCore.js"></script>
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shBrushJScript.js"></script>
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shBrushJava.js"></script>
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shBrushCss.js"></script>
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shBrushPhp.js"></script>
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shBrushSql.js"></script>
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shBrushXml.js"></script>
+    <script src="<?= $this->Url->build('/js/syntaxhighlighter/') ?>shBrushBash.js"></script>
+
     <script src="<?= $this->Url->build('/template_front/') ?>js/jquery.slicknav.min.js"></script>
     <script src="<?= $this->Url->build('/template_front/') ?>js/imagesloaded.pkgd.min.js"></script>
     <script src="<?= $this->Url->build('/template_front/') ?>js/isotope.pkgd.min.js"></script>
@@ -16,6 +25,10 @@
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
+        $( document ).ready(function() {
+            SyntaxHighlighter.all()
+        });
+        
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];

@@ -7,4 +7,6 @@
     <link rel="stylesheet" href="<?= $this->Url->build('/template_front/') ?>css/default-css.css">
     <link rel="stylesheet" href="<?= $this->Url->build('/template_front/') ?>css/styles.css">
     <link rel="stylesheet" href="<?= $this->Url->build('/template_front/') ?>css/responsive.css">
+    <link rel="stylesheet" href="<?= $this->Url->build('/css/syntaxhighlighter/') ?>shCore.css">
+    <link rel="stylesheet" href="<?= $this->Url->build('/css/syntaxhighlighter/') ?>shThemeRDark.css">
     <!-- modernizr css -->

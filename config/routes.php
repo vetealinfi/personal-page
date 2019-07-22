@@ -57,7 +57,8 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/educacion', ['controller' => 'Pages', 'action' => 'education']);
     $routes->connect('/experiencia', ['controller' => 'Pages', 'action' => 'experience']);
     $routes->connect('/proyectos', ['controller' => 'Pages', 'action' => 'projects']);
-    $routes->connect('/blog', ['controller' => 'Pages', 'action' => 'blog']);
+    $routes->connect('/blog/*', ['controller' => 'Pages', 'action' => 'blog']);
+    $routes->connect('/post/*', ['controller' => 'Pages', 'action' => 'post']);
     $routes->connect('/contacto', ['controller' => 'Pages', 'action' => 'contact']);
 
     /**

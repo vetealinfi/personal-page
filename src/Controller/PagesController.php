@@ -144,7 +144,75 @@ class PagesController extends AppController
         $this->set('description', 'Te contare un poco acerca de lo que hago y lo que he aprendido, ojalá te sirva de ayuda. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 6;
-        $this->set(compact('menu_active'));
+
+        $this->loadModel('Posts');
+        $this->loadModel('PostCategories');
+
+        $post_obj = $this->Posts->find()
+            ->contain([
+                'PostCategories'
+            ])
+            ->order([
+                'Posts.id' => 'DESC'
+            ]);
+
+        $posts = $this->paginate($post_obj);
+
+        $post_categories = $this->PostCategories->find()
+            ->all();
+
+        $this->set(compact('menu_active','posts','post_categories'));
+    }
+
+    /**
+     * Displays a view
+     *
+     * @param array ...$path Path segments.
+     * @return \Cake\Http\Response|null
+     * @throws \Cake\Neasdsadadsadorksadsadasdads\Exception\ForbiddenException When a directory traversal attempt.
+     * @throws \Cake\Network\Exfgfdgfdception\NotFoundException When the view file could not
+     *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
+     asdasdasd
+
+     */
+    public function post($slug = null){
+
+        $this->loadModel('Posts');
+        $this->loadModel('PostCategories');
+
+        $post = $this->Posts->find()
+            ->contain([
+                'PostCategories'
+            ])
+            ->where([
+                'Posts.slug' => $slug
+            ])
+            ->first();
+
+
+        $this->set('title', 'Blog Jorge Partal || '.$post->post_category->name.' || '.$post->title);
+        $this->set('description', substr(strip_tags(($post->body)),0,100));
+        $this->viewBuilder()->setLayout('front');
+        $menu_active = 6;
+
+
+        $url_admin = Configure::read('url_admin');
+
+        $last_posts = $this->Posts->find()
+            ->contain([
+                'PostCategories'
+            ])
+            ->where([
+                'Posts.id !=' => $post->id
+            ])
+            ->limit(2)
+            ->all();
+
+
+        $post_categories = $this->PostCategories->find()
+            ->all();
+
+        $this->set(compact('menu_active','post','post_categories','url_admin','last_posts'));
     }
 
     /**
@@ -160,7 +228,7 @@ class PagesController extends AppController
      */
     public function contact(){
         $this->set('title', 'Contact || Cakephp Web Developer');
-        $this->set('description', ' Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce. Te devolveré el llamado apenas pueda o si quieres nos tomamos un café');
+        $this->set('description', ' Contáctame si necesitas realizar un proyecto desde una pagina simple, hasta sistemas complejos como un ecommerce. Te devolveré el llamado apenas pueda o si quieres nos tomamos un café');
         $this->viewBuilder()->setLayout('front');
         $menu_active = 7;
         $this->set(compact('menu_active'));
