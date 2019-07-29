@@ -13,7 +13,7 @@
                                 <h3 class="blog-post-title"><a href="<?= $this->Url->build('/post/'.$post->slug) ?>"><?= $post->title ?></a></h3>
                                 <ul class="blog-meta">
                                     <li><i class="fa fa-user"></i> <?= $post->post_category->name ?></li>
-                                    <li><i class="fa fa-clock-o"></i> <?= $post->publishing_date ?></li>
+                                    <li><i class="fa fa-clock-o"></i> <?= $post->publishing_date->format('d-m-Y'); ?></li>
                                 </ul>
                                 <p><?= substr(strip_tags(($post->body)),0,100) ?>...</p>
                                 <a href="<?= $this->Url->build('/post/'.$post->slug) ?>" class="read-more">Leer más <i class="fa fa-angle-double-right"></i></a>

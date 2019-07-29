@@ -20,7 +20,7 @@
                             <li>
                                 <i class="fa fa-user"></i> <?= $post->post_category->name ?></li>
                             <li>
-                                <i class="fa fa-clock-o"></i><?= $post->publishing_date ?></li>
+                                <i class="fa fa-clock-o"></i><?= $post->publishing_date->format('d-m-Y') ?></li>
                         </ul>
                         <?= $post->body ?>
                     </div>
@@ -55,7 +55,7 @@
                                     <li>
                                         <i class="fa fa-user"></i> <?= $post2->post_category->name ?></li>
                                     <li>
-                                        <i class="fa fa-clock-o"></i> <?= $post2->publishing_date ?></li>
+                                        <i class="fa fa-clock-o"></i> <?= $post2->publishing_date->format('d-m-Y')   ?></li>
                                 </ul>
                                 <p>
                                     <a href="<?= $this->Url->build('/post/'.$post2->slug) ?>"><?= $post2->title ?></a>

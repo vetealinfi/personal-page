@@ -26,7 +26,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="edu-item">
-                                    <span>Actualidad (2018)</span>
+                                    <span>Actualidad (2019)</span>
                                     <h2>Ingeniería Civil Industrial</h2>
                                     <p>Universidad Andrés Bello.</p>
                                 </div>
