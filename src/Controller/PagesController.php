@@ -200,6 +200,9 @@ class PagesController extends AppController
 
 
         $this->set('meta_title',$post->title);
+        $this->set('meta_type','article');
+
+
         if($post->photo != ''){
             $this->set('meta_img',$url_admin.'img/post_main_photos/'.$post->photo);
         }
