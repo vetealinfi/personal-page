@@ -201,7 +201,7 @@ class PagesController extends AppController
 
         $this->set('meta_title',$post->title);
         if($post->photo != ''){
-            $this->set('meta_title',$url_admin.'img/post_main_photos/'.$post->photo);
+            $this->set('meta_img',$url_admin.'img/post_main_photos/'.$post->photo);
         }
 
 
