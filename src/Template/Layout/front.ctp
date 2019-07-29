@@ -26,12 +26,23 @@
         ?>
         <meta content="jorgepartal" name="author" />
 
-        <meta property="og:type" content="website"/>
         <?php
-            if(isset($title)){
-                echo '<meta property="og:title" content="'.$title.'" />';
+            if(isset($meta_title)){
+                echo '<meta property="og:title" content="'.$meta_title.'" />';
             }else{
-                echo '<meta property="og:title" content="Jorge Partal || Cakephp Web Developer" />';
+                if(isset($title)){
+                    echo '<meta property="og:title" content="'.$title.'" />';
+                }else{
+                    echo '<meta property="og:title" content="Jorge Partal || Cakephp Web Developer" />';
+                }
+            }
+        ?>
+
+        <?php
+            if(isset($meta_type)){
+                echo '<meta property="og:type" content="'.$meta_type.'" />';
+            }else{
+                echo '<meta property="og:type" content="website" />';
             }
         ?>
 
@@ -45,7 +56,7 @@
 
         <?php
             if(isset($meta_img)){
-                echo '<meta property="og:image" content="'.$this->Url->build('/template_front/'.$meta_img, true).'" />';
+                echo '<meta property="og:image" content="'.$meta_img.'" />';
             }else{
                 echo '<meta property="og:image" content="'.$this->Url->build('/template_front/jpg/img-face2.jpg', true).'" />';
             }

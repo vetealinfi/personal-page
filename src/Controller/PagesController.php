@@ -198,6 +198,16 @@ class PagesController extends AppController
 
         $url_admin = Configure::read('url_admin');
 
+
+        $this->set('meta_title',$post->title);
+        if($post->photo != ''){
+            $this->set('meta_title',$url_admin.'img/post_main_photos/'.$post->photo);
+        }
+
+
+
+
+
         $last_posts = $this->Posts->find()
             ->contain([
                 'PostCategories'
