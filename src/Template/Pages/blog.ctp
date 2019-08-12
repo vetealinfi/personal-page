@@ -10,6 +10,15 @@
                         ?>
                         <div class="col-md-6">
                             <div class="single-post">
+                                <?php
+                                    if($post->photo != ''){
+                                ?>
+                                    <div class="blog-thumb">
+                                        <img src="<?= $url_admin.'img/post_main_photos/'.$post->photo ?>" alt="<?= $post->title ?>">
+                                    </div>
+                                <?php
+                                    }
+                                ?>
                                 <h3 class="blog-post-title"><a href="<?= $this->Url->build('/post/'.$post->slug) ?>"><?= $post->title ?></a></h3>
                                 <ul class="blog-meta">
                                     <li><i class="fa fa-user"></i> <?= $post->post_category->name ?></li>
