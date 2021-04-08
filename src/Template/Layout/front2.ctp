@@ -13,7 +13,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="default">
   
 
-
+        <script src="<?= $this->Url->build('/template_front/') ?>js/jquery-2.2.4.min.js"></script> 
 
         <script
               src="https://apps.mypurecloud.com/widgets/9.0/cxbus.min.js"
