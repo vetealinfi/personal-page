@@ -84,7 +84,7 @@
               "maxlength": "100",
               "placeholder": "Required",
               "label": "Medida Neumatico"
-            },
+            }
           ]
         }
       };
