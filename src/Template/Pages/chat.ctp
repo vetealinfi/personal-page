@@ -37,7 +37,6 @@
               }
             },
             emojis: true,
-            ,
             "userData": {
               "addressStreet": "",
               "addressCity": "",
@@ -58,7 +57,7 @@
         }
       }
 
- 
+
 
 
     $(document).ready(function() {  
