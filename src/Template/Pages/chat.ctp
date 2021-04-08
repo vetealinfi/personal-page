@@ -50,7 +50,7 @@
         "form": {
           "autoSubmit": false,
           "firstname": "",
-          "lastname": "",
+          "measure": "",
           "email": "",
           "subject": ""
         },
