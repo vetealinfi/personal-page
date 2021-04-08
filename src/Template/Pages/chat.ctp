@@ -64,10 +64,6 @@
             console.log('Chat ended', e);
         }); 
 
-
-
-
-
         customPlugin.command('WebChat.open');
     }
     
