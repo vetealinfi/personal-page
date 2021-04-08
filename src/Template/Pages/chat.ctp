@@ -20,7 +20,7 @@
           main: {
             theme: "light",
             lang: "es",
-            i18n: "<?= $this->Url->build('/js/', true) ?>widgets-es.i18n.json"
+            i18n: "https://www.cambiatuneumatico.com/js/widgets-es.i18n.json"
           },
           webchat: {
             transport: {
@@ -45,7 +45,50 @@
       }
 
 
-
+    function getAdvancedConfig() {
+      return {
+        "form": {
+          "autoSubmit": false,
+          "firstname": "",
+          "lastname": "",
+          "email": "",
+          "subject": ""
+        },
+        "formJSON": {
+          "wrapper": "<table></table>",
+          "inputs": [
+            {
+              "id": "cx_webchat_form_firstname",
+              "name": "firstname",
+              "maxlength": "100",
+              "placeholder": "Required",
+              "label": "First Namee"
+            },
+            {
+              "id": "cx_webchat_form_lastname",
+              "name": "lastname",
+              "maxlength": "100",
+              "placeholder": "Required",
+              "label": "Last Namee"
+            },
+            {
+              "id": "cx_webchat_form_email",
+              "name": "email",
+              "maxlength": "100",
+              "placeholder": "Optional",
+              "label": "Emaile"
+            },
+            {
+              "id": "cx_webchat_form_subject",
+              "name": "subject",
+              "maxlength": "100",
+              "placeholder": "Optional",
+              "label": "Subjecte"
+            }
+          ]
+        }
+      };
+    }  
 
     $(document).ready(function() {  
         cargachat();
@@ -64,7 +107,7 @@
             console.log('Chat ended', e);
         }); 
 
-        customPlugin.command('WebChat.open');
+        customPlugin.command('WebChat.open', getAdvancedConfig());
     }
     
 </script>
