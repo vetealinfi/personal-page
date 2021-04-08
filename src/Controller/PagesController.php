@@ -61,6 +61,24 @@ class PagesController extends AppController
      asdasdasd
 
      */
+    public function chat(){
+        $this->set('title', 'Jorge Partal || Cakephp Web Developer');
+        $this->viewBuilder()->setLayout('front2');
+        $menu_active = 1;
+        $this->set(compact('menu_active'));
+    }
+
+    /**
+     * Displays a view
+     *
+     * @param array ...$path Path segments.
+     * @return \Cake\Http\Response|null
+     * @throws \Cake\Neasdsadadsadorksadsadasdads\Exception\ForbiddenException When a directory traversal attempt.
+     * @throws \Cake\Network\Exfgfdgfdception\NotFoundException When the view file could not
+     *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
+     asdasdasd
+
+     */
     public function skills(){
         $this->set('title', 'Skills Web || Cakephp Web Developer');
         $this->set('description', 'Aquí te presento algunas de mis habilidades, siempre estoy actualizandome. Contáctame si necesitas realizar un proyecyo desde una pagina simple, hasta sistemas complejos como un ecommerce');
