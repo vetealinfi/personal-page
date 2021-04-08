@@ -36,7 +36,21 @@
                 }
               }
             },
-            emojis: true
+            emojis: true,
+            ,
+            "userData": {
+              "addressStreet": "",
+              "addressCity": "",
+              "addressPostalCode": "",
+              "addressState": "",
+              "phoneNumber": "",
+              "customField1Label": "pon nombre",
+              "customField1": "n2",
+              "customField2Label": "n3",
+              "customField2": "n4",
+              "customField3Label": "",
+              "customField3": ""
+            }
           },
           chatButton: {
             enabled: true
@@ -44,7 +58,7 @@
         }
       }
 
-
+ 
 
 
     $(document).ready(function() {  
