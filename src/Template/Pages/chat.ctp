@@ -62,29 +62,29 @@
               "name": "firstname",
               "maxlength": "100",
               "placeholder": "Required",
-              "label": "First Namee"
-            },
-            {
-              "id": "cx_webchat_form_lastname",
-              "name": "lastname",
-              "maxlength": "100",
-              "placeholder": "Required",
-              "label": "Last Namee"
+              "label": "Nombre"
             },
             {
               "id": "cx_webchat_form_email",
               "name": "email",
               "maxlength": "100",
               "placeholder": "Optional",
-              "label": "Emaile"
+              "label": "Correo"
             },
             {
               "id": "cx_webchat_form_subject",
               "name": "subject",
               "maxlength": "100",
               "placeholder": "Optional",
-              "label": "Subjecte"
-            }
+              "label": "Asunto"
+            },
+            {
+              "id": "cx_webchat_form_measure",
+              "name": "measure",
+              "maxlength": "100",
+              "placeholder": "Required",
+              "label": "Medida Neu´matico"
+            },
           ]
         }
       };
