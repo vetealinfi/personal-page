@@ -20,7 +20,7 @@
           main: {
             theme: "light",
             lang: "es",
-            i18n: "https://www.cambiatuneumatico.com/js/widgets-es.i18n.json"
+            i18n: "<?= $this->Url->build('/js/', true) ?>widgets-es.i18n.json"
           },
           webchat: {
             transport: {
