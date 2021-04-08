@@ -83,7 +83,7 @@
               "name": "measure",
               "maxlength": "100",
               "placeholder": "Required",
-              "label": "Medida Neu´matico"
+              "label": "Medida Neumatico"
             },
           ]
         }
