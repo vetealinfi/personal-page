@@ -97,17 +97,20 @@
     function cargachat(){
 
 
-        const customPlugin = CXBus.registerPlugin('Custom');
+        // const customPlugin = CXBus.registerPlugin('Custom');
 
-        customPlugin.subscribe('WebChatService.started', function (e) {
-            console.log('Chat started', e);
-        });
+        // customPlugin.subscribe('WebChatService.started', function (e) {
+        //     console.log('Chat started', e);
+        // });
 
-        customPlugin.subscribe('WebChatService.ended', function (e) {
-            console.log('Chat ended', e);
-        }); 
+        // customPlugin.subscribe('WebChatService.ended', function (e) {
+        //     console.log('Chat ended', e);
+        // }); 
 
-        customPlugin.command('WebChat.open', getAdvancedConfig());
+        // customPlugin.command('WebChat.open', getAdvancedConfig());
+
+
+        CXBus.command('WebChat.open', getAdvancedConfig());
     }
     
 </script>
