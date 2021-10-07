@@ -53,13 +53,13 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'home']);
-    $routes->connect('/skills', ['controller' => 'Pages', 'action' => 'skills']);
-    $routes->connect('/educacion', ['controller' => 'Pages', 'action' => 'education']);
-    $routes->connect('/experiencia', ['controller' => 'Pages', 'action' => 'experience']);
-    $routes->connect('/proyectos', ['controller' => 'Pages', 'action' => 'projects']);
-    $routes->connect('/blog/*', ['controller' => 'Pages', 'action' => 'blog']);
-    $routes->connect('/post/*', ['controller' => 'Pages', 'action' => 'post']);
-    $routes->connect('/contacto', ['controller' => 'Pages', 'action' => 'contact']);
+    // $routes->connect('/skills', ['controller' => 'Pages', 'action' => 'skills']);
+    // $routes->connect('/educacion', ['controller' => 'Pages', 'action' => 'education']);
+    // $routes->connect('/experiencia', ['controller' => 'Pages', 'action' => 'experience']);
+    // $routes->connect('/proyectos', ['controller' => 'Pages', 'action' => 'projects']);
+    // $routes->connect('/blog/*', ['controller' => 'Pages', 'action' => 'blog']);
+    // $routes->connect('/post/*', ['controller' => 'Pages', 'action' => 'post']);
+    // $routes->connect('/contacto', ['controller' => 'Pages', 'action' => 'contact']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
