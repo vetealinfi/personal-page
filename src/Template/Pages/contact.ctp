@@ -19,7 +19,7 @@
                                 </div>
                             </div>
                             <div class="s-contact-info">
-                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <div class="icon"><i class="fa fa-whatsapp"></i></div>
                                 <div class="sc-text">
                                     <p>+56 9 66868200</p>
                                 </div>

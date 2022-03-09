@@ -15,14 +15,7 @@
 
         <script src="<?= $this->Url->build('/template_front/') ?>js/jquery-2.2.4.min.js"></script> 
 
-        <script
-              src="https://apps.mypurecloud.com/widgets/9.0/cxbus.min.js"
-              onload="javascript:CXBus.configure({
-                    debug:false,
-                    pluginsPath:'https://apps.mypurecloud.com/widgets/9.0/plugins/'
-              });
-              CXBus.loadPlugin('widgets-core');">
-        </script>
+
 
      
     </head>
