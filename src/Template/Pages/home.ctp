@@ -14,7 +14,7 @@
                                 <a href="https://www.linkedin.com/in/jorgepartal">Linkedin</a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/Desarrollador-Web-239188126233108/">Facebook</a>
+                                <a href="https://web.facebook.com/desarrolladorwebchile">Facebook</a>
                             </li>
                             <li>
                                 <a href="mailto:jorgepartal@gmail.com">jorgepartal@gmail.com</a>
