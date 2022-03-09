@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-xl-5 offset-xl-1">
                     <div class="hero-content h3-content">
-                        <h3>Hola Mundo,</h3>
+                        <h3>Hola Mundo, </h3>
                         <h2>Soy Jorge
                             <span>Partal</span>
                         </h2>
